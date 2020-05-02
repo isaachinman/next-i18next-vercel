@@ -3669,10 +3669,10 @@ neo-async@^2.5.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
-next-i18next@^5.0.0-beta.1:
-  version "5.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-5.0.0-beta.1.tgz#42c2f78442fd34028027987f1518f59e63ffb2d5"
-  integrity sha512-CkOImEtqNb4ipZ/lIOPSTKSgGXph20xHVF0IE2EXcpN4Rwkz9fx9BieYBuEYaHEyw6r+qTgzooV0JChie7Hp+A==
+next-i18next@^5.0.0-beta.2:
+  version "5.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-5.0.0-beta.2.tgz#32646f31f955a707f6b77bb3cf12371b2afa24f5"
+  integrity sha512-M5QkHf+x13urBJEfKmFlrrnvwg4ob3wv2LacyRK32XbSw9DuVIqttBtg8wR1U1LPpUHsGBQaz0cpJf4QmBlMYA==
   dependencies:
     core-js "^2"
     detect-node "^2.0.4"
