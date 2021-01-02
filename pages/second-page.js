@@ -1,13 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import Link from 'next/link'
 
-import { withTranslation, Link } from '../i18n'
+import { withTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 const SecondPage = ({ t }) => (
-  <React.Fragment>
+  <>
     <main>
       <Header title={t('h1')} />
       <Link href='/'>
@@ -19,15 +19,13 @@ const SecondPage = ({ t }) => (
       </Link>
     </main>
     <Footer />
-  </React.Fragment>
+  </>
 )
 
-SecondPage.getInitialProps = async () => ({
-  namespacesRequired: ['second-page', 'footer'],
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['second-page', 'footer']),
+  }
 })
-
-SecondPage.propTypes = {
-  t: PropTypes.func.isRequired,
-}
 
 export default withTranslation('second-page')(SecondPage)
