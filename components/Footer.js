@@ -1,21 +1,20 @@
-import PropTypes from 'prop-types'
 import { version } from 'next-i18next/package.json'
-import { withTranslation } from 'next-i18next'
+import { useTranslation } from 'next-i18next'
 
-const Footer = ({ t }) => (
-  <footer>
-    <p>
-      {t('description')}
-    </p>
-    <p>
-      next-i18next v
-      {version}
-    </p>
-  </footer>
-)
+const Footer = () => {
+  const { t } = useTranslation('footer')
 
-Footer.propTypes = {
-  t: PropTypes.func.isRequired,
-}
+  return (
+    <footer>
+      <p>
+        {t('description')}
+      </p>
+      <p>
+        next-i18next v
+        {version}
+      </p>
+    </footer>
+  );
+};
 
-export default withTranslation('footer')(Footer)
+export default Footer
